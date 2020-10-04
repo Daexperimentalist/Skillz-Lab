@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SkillzLab</title>
+
+	<style type="text/css">
+
+@font-face {
+  font-family: 'hightide1';
+  src: url(assets/fonts/hightide1.ttf);
+  }
+
+		.menu {
+			position: fixed;
+			bottom: 0;
+			margin-left: -30px;
+			width: 100%;
+		}
+		.menu ul {
+			list-style-type: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.menu li {
+			padding: 30px;
+		}
+		.menu img {
+			width: 40px;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			height: auto;
+		}
+
+		#title {
+            text-align: center;
+			padding-top: 10px;
+			
+			font-family:'hightide1';
+
+
+    background: linear-gradient(
+                45deg,
+                #ffffff,
+                #8ac594,
+                #52d0d2,
+                #d8d71f,
+                #d88e1f,
+                #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 1000%;
+    animation: txt-animation 30s infinite alternate;
+}
+
+@keyframes txt-animation{
+    0% { background-position: left; }
+    100% {background-position: right;}
+}
+#off {
+	filter: opacity(50%);
+}
+
+
+	</style>
+</head>
+<body bgcolor="#E6E6E6">
+<h1 id = "title" class="title-anime">
+	Skillz Lab
+</h1>
+<div class ="menu">
+<ul>
+<li>
+	<a href="notes/ecg/mode1.html"> <img src="assets/imgs/ecg.svg"></a>
+</li>
+<li>
+	<img id = "off" src="assets/imgs/eeg.png">
+</li>
+<li>
+	<img id = "off" src="assets/imgs/H&P.png">
+</li>
+</ul>
+<ul>
+<li>
+	<img id = "off" src="assets/imgs/hsound.png">
+</li>
+<li>
+	<img id = "off" src="assets/imgs/S&S.png">
+</li>
+<li>
+	<img id = "off" src="assets/imgs/test.png">
+</li>
+</ul>
+</div>
+</body>
+</html>
